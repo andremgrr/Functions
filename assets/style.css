@@ -4,6 +4,18 @@ body {
 	padding: 0;
 }
 
+h1 {
+    color: black;
+}
+
+.title-div {
+}
+
+.down {
+   margin-top: 70vh; 
+   align-items: center;
+}
+
 #score {
 	position: absolute;
 	top: 10px;
