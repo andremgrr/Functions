@@ -1,8 +1,13 @@
+@font-face {
+	font-family: 'Biennale';
+	src: url('Biennale Medium.otf') format('opentype');
+ }
+
 
 body {
 	margin: 0;
 	padding: 0;
-  background: linear-gradient(-5deg,#FFCB12, #e2834d );
+  background: linear-gradient(-5deg,#FFCB12, #f37a34 );
 }
 
 
@@ -11,11 +16,26 @@ h1, h2 {
   }
 h1{
     padding-top: 10vh;
+    font-family:'Biennale';
     font-size: 28px;
+    color: white;
 }
 .down {
    margin-top: 10vh; 
    align-items: center;
 }
 
+.Game1 {
+    background-image: 
+}
   
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button {
+  display: flex;
+  justify-content: center;
+}
