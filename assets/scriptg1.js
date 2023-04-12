@@ -9,8 +9,8 @@ function moveButton(event) {
   var deltaY = event.clientY - container.offsetTop - container.offsetHeight / 8;
 
   // Distance that the button should move in each direction
-  var moveX = deltaX / 20;
-  var moveY = deltaY / 20;
+  var moveX = deltaX / 5;
+  var moveY = deltaY / 5;
 
   // Move the button to follow the cursor
   button.style.left = container.offsetWidth / 2 + moveX + "px";
