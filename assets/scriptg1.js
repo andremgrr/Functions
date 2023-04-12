@@ -3,10 +3,10 @@ var isPressed = false;
 
 button.addEventListener("mousedown", function() {
   isPressed = true;
-  button.style.transform = "scale()";
+  button.style.transform = "scale(10)";
 });
 
-button.addEventListener("mouseup", function() {
+document.addEventListener("mouseup", function() {
   isPressed = false;
   button.style.transform = "scale(1)";
 });
