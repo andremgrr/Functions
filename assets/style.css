@@ -25,17 +25,21 @@ h1{
    align-items: center;
 }
 
-.Game1 {
-    background-image: 
-}
   
 .button-row {
+  padding-top: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .icon-button {
+  display: flex;
+  padding-right: 50px;
+  justify-content: center;
+}
+
+.icon-button2 {
   display: flex;
   justify-content: center;
 }
