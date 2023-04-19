@@ -68,6 +68,6 @@ h2 {
 .Lobi {
   margin-top: 20vh;
   background-image: url('Lobi.png');
-  width: 300px; /* Set the width of the div to your desired size */
+  width: 300px; 
   height: 320px;
 }
