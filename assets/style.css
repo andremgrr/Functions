@@ -1,25 +1,46 @@
 @font-face {
-	font-family: 'Biennale';
-	src: url('Biennale Medium.otf') format('opentype');
+	font-family: 'ClashDisplay-Semibold';
+	src: url('ClashDisplay-Semibold.ttf') format('truetype');
+ }
+
+ @font-face {
+	font-family: 'ClashDisplay-Medium';
+	src: url('ClashDisplay-Medium.ttf') format('truetype');
  }
 
 
 body {
 	margin: 0;
 	padding: 0;
-  background: linear-gradient(-5deg,#FFCB12, #f37a34 );
+  background-image: url('Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Container {
+  display: flex;
+  direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 
-h1, h2 {
-    text-align: center;
-  }
-h1{
+h1 {
     padding-top: 10vh;
-    font-family:'Biennale';
-    font-size: 28px;
+    font-family:'ClashDisplay-Semibold';
+    font-size: 80px;
     color: white;
 }
+
+h2 {
+  margin-top: -8vh;
+  font-family:'ClashDisplay-Medium';
+  font-size: 28px;
+  color: white;
+}
+
 .down {
    margin-top: 10vh; 
    align-items: center;
@@ -42,4 +63,11 @@ h1{
 .icon-button2 {
   display: flex;
   justify-content: center;
+}
+
+.Lobi {
+  margin-top: 20vh;
+  background-image: url('Lobi.png');
+  width: 300px; /* Set the width of the div to your desired size */
+  height: 320px;
 }
