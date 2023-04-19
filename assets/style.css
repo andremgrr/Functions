@@ -48,7 +48,6 @@ h2 {
 
   
 .button-row {
-  display: flex;
   justify-content: center;
   width: 30vw;
   align-items: center;
