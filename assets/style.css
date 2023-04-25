@@ -13,6 +13,7 @@
   --header: 40px;
   --subheader: 28px;
   --lobiwidth: 200px;
+  --cardsize: 250px;
 
 }
 
@@ -23,6 +24,7 @@
       --header: 80px;
       --subheader: 42px;
       --lobiwidth: 300px;
+      --cardsize: 400px;
   }
 }
 
@@ -30,9 +32,14 @@
 body {
 	margin: 0;
 	padding: 0;
+  background-image: url('Homescreen.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*
   background: #F29E20;
   background: radial-gradient(at left top, #F29E20, rgba(247, 227, 208, 0));
-  
+  */
 }
 
 .Hero-section {
@@ -85,6 +92,7 @@ P {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
+  margin-top: 10vh;
 }
 
 @media (min-width: 1000px) {
@@ -107,11 +115,17 @@ P {
 
 .Lobi-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
   
+}
+
+@media (min-width: 768px) {
+  .Lobi-container {
+    flex-direction: row;
+}
 }
 
 .Lobi-modes {
@@ -127,12 +141,19 @@ P {
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  width: 400px;
-  height: 400px;
+  width: var(--cardsize);
+  height: var(--cardsize);
 }
 
 .card-title {
-  padding-top: 60px;
+  padding-top: 0px;
+  margin-bottom:0
+}
+
+@media (min-width: 768px) {
+  .card-title {
+    padding-top: 60px;
+  }
 }
 
 .card-content {
@@ -141,6 +162,13 @@ P {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .card-description {
