@@ -12,6 +12,7 @@
   --base: 16px;
   --header: 40px;
   --subheader: 28px;
+  --subheader3: 24px;
   --lobiwidth: 200px;
   --cardsize: 250px;
 
@@ -23,6 +24,7 @@
       --base: 24px;
       --header: 80px;
       --subheader: 42px;
+      --subheader3: 32px;
       --lobiwidth: 300px;
       --cardsize: 400px;
   }
@@ -62,6 +64,12 @@ h2 {
   
   font-family:'ClashDisplay-Medium';
   font-size: var(--subheader);
+  color: white;
+}
+
+h3 {
+  font-family:'ClashDisplay-Medium';
+  font-size: var(--subheader3);
   color: white;
 }
 
@@ -152,7 +160,7 @@ P {
 
 @media (min-width: 768px) {
   .card-title {
-    padding-top: 60px;
+    padding-top: 0px;
   }
 }
 
@@ -174,4 +182,90 @@ P {
 .card-description {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* Description */
+
+.Description {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (min-width: 768px) {
+  .Description {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+@media (min-width: 768px) {
+  .description-container {
+    flex-direction: row;
+    margin-top: 10vh;
+  }
+}
+
+
+.Description-title {
+  width: 70vw;
+  padding-left: 5vw;
+}
+
+@media (min-width: 768px) {
+  .Description-title {
+    width: 35vw;
+  }
+}
+
+.Description-text {
+  width: 70vw;
+  padding-left: 5vw;
+}
+
+@media (min-width: 768px) {
+  .Description-text {
+    width: 35vw;
+  }
+}
+
+.Description-image {
+  background-image: url('Macbook-Zoom.png');
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  height: 170px;
+  width: 300px;
+  padding-top: 50px;
+  padding-left: 25px;
+
+}
+
+@media (min-width: 768px) and (max-width: 1100px){
+  .Description-image {
+    height: 250px;
+    width: 350px;
+    padding-left: 200px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .Description-image {
+    height: 400px;
+    width: 600px;
+    padding-left: 200px;
+    padding-right: 50px;
+  }
 }
