@@ -8,71 +8,142 @@
 	src: url('ClashDisplay-Medium.ttf') format('truetype');
  }
 
+ :root {
+  --base: 16px;
+  --header: 40px;
+  --subheader: 28px;
+  --lobiwidth: 200px;
+
+}
+
+@media screen and (min-width: 1000px)
+{
+  :root {
+      --base: 24px;
+      --header: 80px;
+      --subheader: 42px;
+      --lobiwidth: 300px;
+  }
+}
+
 
 body {
 	margin: 0;
 	padding: 0;
-  background-image: url('Background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #F29E20;
+  background: radial-gradient(at left top, #F29E20, rgba(247, 227, 208, 0));
+  
 }
 
-.Container {
-  display: flex;
-  direction: column;
-  gap: 100px;
-  align-items: center;
-  justify-content: center;
+.Hero-section {
+  display: block;
+}
+
+.title-div {
+  text-align: center;
 }
 
 
 h1 {
     padding-top: 10vh;
     font-family:'ClashDisplay-Semibold';
-    font-size: 80px;
+    font-size: var(--header);
     color: white;
 }
 
 h2 {
-  margin-top: -8vh;
+  
   font-family:'ClashDisplay-Medium';
-  font-size: 28px;
+  font-size: var(--subheader);
   color: white;
 }
 
-.down {
-   margin-top: 10vh; 
-   align-items: center;
+P {
+  font-family:'ClashDisplay-Medium';
+  font-size: var(--base);
+  color: white;
 }
 
-  
-.button-row {
-  justify-content: center;
-  width: 30vw;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 10vh;
-  gap: 10px;
-  height: 80vh;
-  overflow: auto;
+@media (min-width: 1000px) {
+  h2 {
+      margin-top: -4vh;
 
-}
-
-.icon-button {
-  display: flex;
-  justify-content: center;
-  overflow: visible;
-}
-
-.icon-button2 {
-  display: flex;
-  justify-content: center;
+  }
 }
 
 .Lobi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--lobiwidth);
+  height: var(--lobiwidth);
+  border-radius: 50%;
+  background-color: rgb(255, 242, 223);
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@media (min-width: 1000px) {
+  .Lobi {
+      margin-top: 10vh;
+
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  to {
+    transform: translate(-50%, -50%) translateY(-20px);
+  }
+}
+
+/* Card Content */
+
+.Lobi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  
+}
+
+.Lobi-modes {
+  display: block;
   margin-top: 20vh;
-  background-image: url('Lobi.png');
-  width: 300px; 
-  height: 320px;
+  padding: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.card-title {
+  padding-top: 60px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.card-description {
+  margin-top: 0;
+  margin-bottom: 0;
 }
