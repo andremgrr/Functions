@@ -178,12 +178,15 @@ P {
 }
 
 .card-title {
+
   padding-top: 0px;
   margin-bottom:0
+  
 }
 
 @media (min-width: 768px) {
   .card-title {
+    
     padding-top: 0px;
   }
 }
@@ -194,11 +197,12 @@ P {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+ 
 }
 
 @media (max-width: 768px) {
   .card-content {
-    width: 150px;
+    width: 200px;
     height: 150px;
   }
 }
