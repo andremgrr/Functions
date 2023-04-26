@@ -33,7 +33,7 @@ function moveCircle() {
     dy = -dy; 
   }
 
-   /* I had to ask a friend who knows a bit of javascript I was mixing too much code together */
+/* I had to ask a friend who knows a bit of javascript I was mixing too much code together */
  
   circle.style.left = circleX - circleRadius + 'px';
   circle.style.top = circleY - circleRadius + 'px';

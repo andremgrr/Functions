@@ -1,18 +1,33 @@
-var button = document.getElementById("button");
-var container = document.querySelector(".container");
 
-container.addEventListener("mousemove", moveButton);
+const circle = document.getElementById('circle');
+let mouseX = 0;
+let mouseY = 0;
+let circleX = 0;
+let circleY = 0;
 
-function moveButton(event) {
-  // Distance from the center of the container to the cursor
-  var deltaX = event.clientX - container.offsetLeft - container.offsetWidth / 16;
-  var deltaY = event.clientY - container.offsetTop - container.offsetHeight / 8;
+function animate() {
+  /* Distance between the circle and cursor */
+  const dx = mouseX - circleX;
+  const dy = mouseY - circleY;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+  
+  /* delay for circle */
+  const speed = 0.05;
+  circleX += dx * speed;
+  circleY += dy * speed;
+  
+  /* inspiration I got from codepen https://codepen.io/quentindigital/pen/BapazMy */
+  circle.style.left = circleX + 'px';
+  circle.style.top = circleY + 'px';
+  
 
-  // Distance that the button should move in each direction
-  var moveX = deltaX / 6;
-  var moveY = deltaY / 6;
-
-  // Move the button to follow the cursor
-  button.style.left = container.offsetWidth / 2 + moveX + "px";
-  button.style.top = container.offsetHeight / 2 + moveY + "px";
+  requestAnimationFrame(animate);
 }
+
+document.addEventListener('mousemove', (e) => {
+  /* I also watched this youtube video to understand the delay better https://www.youtube.com/watch?v=7Cu_8lu8BCU */
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+animate();

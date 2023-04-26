@@ -28,6 +28,17 @@ html, body {
 
 body {
     background: linear-gradient(-5deg, #FF8B36, #FDBD1A);
+   
+}
+
+#circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
 
 .nav {
