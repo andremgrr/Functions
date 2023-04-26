@@ -8,6 +8,9 @@
 	src: url('ClashDisplay-Medium.ttf') format('truetype');
  }
 
+
+ @import url('https://use.typekit.net/yub8uur.css');
+ 
  :root {
   --base: 16px;
   --header: 40px;
