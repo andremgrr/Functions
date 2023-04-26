@@ -296,6 +296,8 @@ P {
     width: 600px;
     padding-left: 200px;
     padding-right: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
   }
 }
 
