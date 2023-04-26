@@ -38,10 +38,7 @@ body {
 	margin: 0;
 	padding: 0;
   background: linear-gradient(45deg, #FA8138, #FDBB57);
-  /*
-  background: #F29E20;
-  background: radial-gradient(at left top, #F29E20, rgba(247, 227, 208, 0));
-  */
+  
 }
 
 /* Navigation Styles */
