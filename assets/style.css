@@ -78,7 +78,7 @@ body {
 
 
 h1 {
-    padding-top: 10vh;
+    padding-top: 8vh;
     font-family:'ClashDisplay-Semibold';
     font-size: var(--header);
     color: white;
@@ -289,6 +289,69 @@ P {
   .Description-image {
     height: 400px;
     width: 600px;
+    padding-left: 200px;
+    padding-right: 50px;
+  }
+}
+
+/* How it works */
+
+.HowitWorks {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (min-width: 1100px) {
+  .HowitWorks {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.HowItWorks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+@media (min-width: 768px) {
+  .HowItWorks-container {
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+
+.HowItWorks-image {
+  background-image: url('HowItWorks.png');
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  height: 170px;
+  width: 300px;
+  padding-top: 50px;
+  padding-left: 25px;
+
+}
+
+@media (min-width: 768px) and (max-width: 1100px){
+  .HowItWorks-image {
+    height: 300px;
+    width: 300px;
+    padding-left: 200px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .HowItWorks-image {
+    height: 400px;
+    width: 430px;
     padding-left: 200px;
     padding-right: 50px;
   }
