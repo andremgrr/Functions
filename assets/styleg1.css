@@ -70,8 +70,8 @@ body {
     border-radius: 50%;
     background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    position: absolute; /* add this */
-    top: 50%; /* start in the middle */
+    position: absolute; 
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
 }
