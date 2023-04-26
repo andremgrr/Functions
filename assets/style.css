@@ -249,11 +249,13 @@ P {
 .Description-title {
   width: 70vw;
   padding-left: 5vw;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
   .Description-title {
     width: 35vw;
+    padding-top: 0;
   }
 }
 
